@@ -62,5 +62,6 @@
   "java.debug.settings.enableRunDebugCodeLens": false,
   "java.dependency.enableDependencyCheckup": false,
   "editor.formatOnSave": true,
-  "editor.formatOnPaste": true
+  "editor.formatOnPaste": true,
+  "webPreview.url": "http://localhost:8000"
 }

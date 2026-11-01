@@ -1,2 +1,8 @@
 [tools]
 checkstyle = "latest"
+
+[tasks.sphinx-build]
+run = "bash ./util/sphinx-build.bash"
+
+[tasks.sphinx-autobuild]
+run = "bash ./util/sphinx-autobuild.bash"
