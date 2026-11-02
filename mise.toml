@@ -1,3 +1,13 @@
 [tools]
-checkstyle = "latest"
+watchexec = "latest"
+node = "latest"
 
+[tasks.dokka]
+run = "./gradlew :dokkaGenerate --build-cache"
+
+[tasks.dokka_serve]
+run = [
+    "mise run dokka", # complile just to be safe; build is cached so not the end of the world
+    "npm install anywhere -g", # ensure anywhere is installed
+    "anywhere -p 5464 -d build/dokka/html" # finally serve the build on port 5464
+]

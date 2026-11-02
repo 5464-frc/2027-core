@@ -2,6 +2,7 @@ plugins {
     id "java"
     id "application"
     id "org.wpilib.GradleRIO" version "2027.0.0-alpha-8"
+    id("org.jetbrains.dokka") version "2.2.0"
 }
 
 java {
